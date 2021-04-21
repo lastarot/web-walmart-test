@@ -1,13 +1,17 @@
 import React from "react";
 
+import { InfoProduct } from "./styles/style";
+
 const Description = ({ desc, marca, valor }) => {
   let isRender = true;
   return (
     <>
-      <div>
-        <spam>{marca}</spam> <spam>{desc}</spam>
+      <InfoProduct>
+        <div className="product-description">
+          <spam className="brand">{marca}</spam> <spam>{desc}</spam>
+        </div>
         <h3>{valor}</h3>
-      </div>
+      </InfoProduct>
       <div>{isRender && <button>agregar</button>}</div>
     </>
   );

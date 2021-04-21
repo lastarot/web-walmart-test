@@ -46,3 +46,20 @@ export const Separator = styled.div`
     rgba(0, 0, 0, 0.12)
   );
 `;
+
+export const InfoProduct = styled.div`
+  padding: 0.7rem;
+  .product-description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6d6e71;
+    line-height: 1.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+  .brand {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+`;
